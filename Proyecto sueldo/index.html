@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/motor.js" defer ></script>
+    <link rel="stylesheet" href="css/style.css">
+<body>
+    <h1>CALCULADORA SUELDO</h1>
+
+    <form method="POST" id="calculadoraForm">
+
+    <label for="sueldo">Sueldo bruto anual:</label>
+    <input type="text" name="sueldo" id="sueldo">
+    
+    <label for="Mensualidades">Mensualidades</label>
+    <input type="radio" name="radio" id="radio" value=12>12
+    <input type="radio" name="radio" id="radio" value=14>14
+   
+    <label for="hijos">Hijos:</label>
+    <input type="text" name="hijos" id="hijos">
+    
+    
+    <label for="tipocontrato">Tipo de contrato:</label>
+    <select name="" id="tipocontrato">
+        <option value="Indefinido">Indefinido</option>
+        <option value="Temporal">Temporal</option>
+        <option value="Autonomo">Autonomo</option>
+    </select>
+   
+    <input type="submit" value="Calcular" id="calcular">
+
+</form>
+<h2>Resultado:</h2>
+    <p id="resultado"></p>
+</body>
+</html>
